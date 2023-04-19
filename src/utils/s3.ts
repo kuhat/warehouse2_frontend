@@ -1,8 +1,8 @@
 import aws from 'aws-sdk'
 
 const region = "us-east-1"
-const secretAccessKey = "4AZMKTe+Or1pqCeZagvf3pH1Wl3kj5x4KkU7frHx"
-const accessKeyId = "AKIA4OLUM7OFEWIKLPXP"
+const secretAccessKey = process.env.SECRET_ACCESS_KEY
+const accessKeyId = process.env.ACCESS_KEY_ID
 const bucketName = "ass5bucket"
 
 console.log(region)
