@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import { useGoogleLogin } from '@react-oauth/google';
 
 function Login(props : any){
-    console.log(props.login)
+    // console.log(props.login)
     const isLogged = props.isLoggedIn
     const setLoggedIn = props.setLoggedIn
     const login: any = useGoogleLogin({

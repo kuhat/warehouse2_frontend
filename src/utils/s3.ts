@@ -1,12 +1,10 @@
 import aws from 'aws-sdk'
 
 const region = "us-east-1"
-const secretAccessKey = "4AZMKTe+Or1pqCeZagvf3pH1Wl3kj5x4KkU7frHx"
-const accessKeyId = "AKIA4OLUM7OFEWIKLPXP"
+const secretAccessKey = process.env.REACT_APP_SECRET_ACCESS_KEY
+const accessKeyId = process.env.REACT_APP_ACCESS_KEY_ID
 const bucketName = "ass5bucket"
 
-console.log(region)
-console.log(secretAccessKey)
 const s3 = new aws.S3({
     region,
     accessKeyId,
