@@ -38,7 +38,7 @@ export const GradeTable = (props: any) => {
         setClassName(props.className)
         setWeights(props.weights)
         setItems(props.items)
-        console.log(items)
+        // console.log(items)
     }, [props])
 
     function createItemData(
